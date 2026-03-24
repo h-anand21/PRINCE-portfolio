@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Primary Meta Tags -->
-    <title>Marjo Ballabani | Senior Software Engineer | Full-Stack & Cloud Expert</title>
-    <meta name="title" content="Marjo Ballabani | Senior Software Engineer | Full-Stack & Cloud Expert">
-    <meta name="description" content="Senior Software Engineer with 11+ years of experience in distributed systems, microservices, and cloud technologies. Expert in Node.js, React, Python, Google Cloud. Based in Munich, Germany.">
-    <meta name="keywords" content="Marjo Ballabani, Software Engineer, Full-Stack Developer, Cloud Engineer, Microservices, Node.js, React, Python, Google Cloud, AWS, Distributed Systems, Munich, Germany, Senior Developer, DevOps, Kubernetes, Docker">
-    <meta name="author" content="Marjo Ballabani">
+    <title>Prince Kumar | Finance &amp; Capital Markets Enthusiast | Delhi, India</title>
+    <meta name="title" content="Prince Kumar | Finance &amp; Capital Markets Enthusiast | Delhi, India">
+    <meta name="description" content="Investment Banking enthusiast based in Delhi, India. Skilled in financial analysis, valuation, data analytics (Power BI, SQL, Python). Founder of Princelytics. JP Morgan &amp; Goldman Sachs virtual internship experience.">
+    <meta name="keywords" content="Prince Kumar, Investment Banking, Finance, Capital Markets, Financial Analysis, Valuation, Power BI, SQL, Python, Data Analytics, Princelytics, Delhi, India, Goldman Sachs, JP Morgan">
+    <meta name="author" content="Prince Kumar">
     <meta name="robots" content="index, follow">
     <meta name="language" content="English">
 
@@ -196,7 +196,7 @@
     <section class="hero" id="hero">
         <div class="hero-content">
             <div class="hero-left">
-                <p class="hero-greeting" id="hero-greeting">Hi there! ðŸ‘‹</p>
+                <p class="hero-greeting" id="hero-greeting">Hi there!</p>
                 <h1 class="hero-name">I'm Prince Kumar.</h1>
                 <p class="hero-description">
                     Delhi-based Investment Banking professional focused on finance, valuation, and strategic transactions.
@@ -218,9 +218,28 @@
                             <span class="coffee-arrow-text">Buy me a coffee</span>
                             <img src="image/arrow.png" alt="arrow" class="coffee-arrow-img" width="140" height="140">
                         </div>
-                        <a href="https://www.paypal.com/paypalme/Ballabani" target="_blank" class="btn-coffee">
-                            <img src="image/caffe-icon.gif" alt="Coffee" class="coffee-icon-img" width="52" height="52">
+                        <a href="upi://pay?pa=pkumarktq2-2@oksbi&pn=Prince%20Kumar&cu=INR"
+                           class="btn-coffee"
+                           onclick="handleUPI(event)">
+                            <img src="image/caffe-icon.gif" alt="Pay via UPI" class="coffee-icon-img" width="52" height="52">
                         </a>
+
+                        <!-- UPI Fallback Popup -->
+                        <div id="upi-popup" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.55); z-index:99999; align-items:center; justify-content:center;">
+                            <div style="background:#fff; border:3px solid #000; box-shadow:8px 8px 0 #000; border-radius:12px; padding:2rem 2.5rem; max-width:320px; width:90%; text-align:center; font-family:'Space Grotesk',sans-serif; position:relative;">
+                                <button onclick="document.getElementById('upi-popup').style.display='none'" style="position:absolute;top:10px;right:14px;background:none;border:none;font-size:1.4rem;cursor:pointer;color:#000;">&times;</button>
+                                <div style="font-size:2.5rem; margin-bottom:0.5rem;">&#x1F4B0;</div>
+                                <h3 style="margin:0 0 0.5rem; font-size:1.1rem;">Pay via UPI</h3>
+                                <p style="font-size:0.85rem; color:#555; margin-bottom:1rem;">Open any UPI app and pay to:</p>
+                                <div style="background:#ffd93d; border:2px solid #000; border-radius:8px; padding:0.6rem 1rem; font-size:1rem; font-weight:700; letter-spacing:0.5px; margin-bottom:1rem; cursor:pointer;" id="upi-id-display" onclick="copyUPI()">
+                                    pkumarktq2-2@oksbi
+                                </div>
+                                <button onclick="copyUPI()" style="background:#66d9ef; border:2px solid #000; border-radius:6px; padding:0.4rem 1.2rem; font-weight:700; cursor:pointer; font-family:'Space Grotesk',sans-serif; box-shadow:3px 3px 0 #000;">
+                                    &#x1F4CB; Copy UPI ID
+                                </button>
+                                <p style="font-size:0.75rem; color:#888; margin-top:0.8rem;">Works with PhonePe, GPay, Paytm & all UPI apps</p>
+                            </div>
+                        </div>
                     </div>
                     <a href="#contact" class="btn-cta">Get in Touch!</a>
                 </div>
@@ -1601,6 +1620,42 @@
                 certTrack.scrollBy({ left: 300, behavior: 'smooth' });
             });
         }
+        // UPI Payment Handler
+        function handleUPI(e) {
+            const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
+            if (isMobile) {
+                return true; // let upi:// link open the app
+            }
+            e.preventDefault();
+            const popup = document.getElementById('upi-popup');
+            popup.style.display = 'flex';
+        }
+
+        function copyUPI() {
+            const upiId = 'pkumarktq2-2@oksbi';
+            navigator.clipboard.writeText(upiId).then(() => {
+                const el = document.getElementById('upi-id-display');
+                const original = el.textContent;
+                el.textContent = '✅ Copied!';
+                el.style.background = '#a8e6cf';
+                setTimeout(() => {
+                    el.textContent = upiId;
+                    el.style.background = '#ffd93d';
+                }, 2000);
+            }).catch(() => {
+                const ta = document.createElement('textarea');
+                ta.value = upiId;
+                document.body.appendChild(ta);
+                ta.select();
+                document.execCommand('copy');
+                document.body.removeChild(ta);
+                alert('Copied: ' + upiId);
+            });
+        }
+
+        document.getElementById('upi-popup').addEventListener('click', function(e) {
+            if (e.target === this) this.style.display = 'none';
+        });
 
     </script>
 </body>
