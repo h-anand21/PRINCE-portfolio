@@ -790,140 +790,126 @@ ${this.wrapWithColor(
   showExperience(outputElement = this.output) {
     const experience = `<span style="color: #ffff00; font-weight: bold;">💼 Professional Experience</span>
 
-<span style="color: #00ffff;">UNICEPTA | Senior Software Engineer</span>
+<span style="color: #00ffff;">Investment Banking & Finance Simulations</span>
+${this.wrapWithColor('JPMorgan | Citi | EY | Goldman Sachs | SEBI', '#ffffff')}
 ${this.wrapWithColor(
-  'Jul 2020 - Present | Cologne, Germany | 450+ employees',
-  '#ffffff',
-)}
-${this.wrapWithColor(
-  'Visionary, AI-powered Media & Data Intelligence Solutions',
+  'Hands-on exposure to real-world financial workflows and market strategies',
   '#98fb98',
 )}
 
-• ${this.wrapWithColor('Part of Core team', '#ffa07a')} - ${this.wrapWithColor(
-      'Architect and part of every decision.',
+• ${this.wrapWithColor('JPMorgan', '#ffa07a')} - ${this.wrapWithColor(
+      'Investment Banking Job Simulation (M&A, valuation, deal analysis)',
       '#ffffff',
     )}
-• ${this.wrapWithColor(
-      'Microservices engineer',
-      '#ffa07a',
-    )} - ${this.wrapWithColor(
-      'Designed and build services for distributed system',
+• ${this.wrapWithColor('Citi', '#ffa07a')} - ${this.wrapWithColor(
+      'Markets Sales & Trading simulation',
       '#ffffff',
     )}
-• ${this.wrapWithColor('Pipeline engineer', '#ffa07a')} - ${this.wrapWithColor(
-      'Google cloud engineer for data pipeline',
+• ${this.wrapWithColor('EY', '#ffa07a')} - ${this.wrapWithColor(
+      'FAAS - Financial Accounting Advisory Services',
       '#ffffff',
     )}
-• ${this.wrapWithColor('Fullstack engineer', '#ffa07a')} - ${this.wrapWithColor(
-      'Wrote and reviewed code for front/back/cloud.',
+• ${this.wrapWithColor('Goldman Sachs', '#ffa07a')} - ${this.wrapWithColor(
+      'Operations and financial process simulation',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('SEBI', '#ffa07a')} - ${this.wrapWithColor(
+      'Investor Awareness & financial market fundamentals',
       '#ffffff',
     )}
 
-${this.wrapWithColor('Technologies used:', '#00ffff')} ${this.wrapWithColor(
-      'Typescript, React, NodeJs, Poetry, PyTest, ReactJS, Jest, Cypress, ES6, ElasticSearch, Google Cloud, JIRA, Firebase, Kubernetes, Data Flow',
+${this.wrapWithColor('Core Skills:', '#00ffff')} ${this.wrapWithColor(
+      'Financial Analysis, Valuation, Capital Markets, M&A, Risk Analysis',
       '#87cefa',
     )}
 
-<span style="color: #00ffff;">RITECH SOLUTIONS | Senior Software Engineer</span>
+<span style="color: #00ffff;">Data Analytics & Business Intelligence</span>
+${this.wrapWithColor('Deloitte | Google | OneRoadmap | IBM', '#ffffff')}
+
+• ${this.wrapWithColor('Deloitte', '#ffa07a')} - ${this.wrapWithColor(
+      'Data Analytics Job Simulation (business data insights)',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('Google Analytics', '#ffa07a')} - ${this.wrapWithColor(
+      'Web analytics & performance tracking',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('Conversion Optimization', '#ffa07a')} - ${this.wrapWithColor(
+      'Improving user engagement and conversion rates',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('IBM SQL', '#ffa07a')} - ${this.wrapWithColor(
+      'SQL & relational database fundamentals',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('OneRoadmap', '#ffa07a')} - ${this.wrapWithColor(
+      'Data Analyst Certification',
+      '#ffffff',
+    )}
+
+${this.wrapWithColor('Core Skills:', '#00ffff')} ${this.wrapWithColor(
+      'SQL, Data Visualization, Dashboarding, Business Insights',
+      '#87cefa',
+    )}
+
+<span style="color: #00ffff;">AI & Emerging Technologies</span>
+${this.wrapWithColor('TATA | Intel | Anthropic | AI Certifications', '#ffffff')}
+
+• ${this.wrapWithColor('TATA', '#ffa07a')} - ${this.wrapWithColor(
+      'GenAI Powered Data Analytics',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('Intel', '#ffa07a')} - ${this.wrapWithColor(
+      'AI for All Program',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('Anthropic', '#ffa07a')} - ${this.wrapWithColor(
+      'Claude API & AI Fluency',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('AI Programs', '#ffa07a')} - ${this.wrapWithColor(
+      'AI Awareness & practical applications',
+      '#ffffff',
+    )}
+
+${this.wrapWithColor('Core Skills:', '#00ffff')} ${this.wrapWithColor(
+      'AI Tools, GenAI, Automation, Data-driven decision making',
+      '#87cefa',
+    )}
+
+<span style="color: #00ffff;">Professional Development & Management</span>
+${this.wrapWithColor('Accenture | HP | LinkedIn Learning', '#ffffff')}
+
+• ${this.wrapWithColor('Accenture', '#ffa07a')} - ${this.wrapWithColor(
+      'Software Engineering Job Simulation',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('HP', '#ffa07a')} - ${this.wrapWithColor(
+      'Customer Relationship Management',
+      '#ffffff',
+    )}
+• ${this.wrapWithColor('LinkedIn Learning', '#ffa07a')} - ${this.wrapWithColor(
+      'Agile Foundations & Corporate Finance',
+      '#ffffff',
+    )}
+
+${this.wrapWithColor('Core Skills:', '#00ffff')} ${this.wrapWithColor(
+      'Agile, CRM, Business Strategy, Project Management',
+      '#87cefa',
+    )}
+
 ${this.wrapWithColor(
-  'Jul 2018 – Jul 2020 | Tirana, Albania | 100-150 employees',
-  '#ffffff',
+  '╭───────────────────────────────────────────────────────╮',
+  '#ffff00',
 )}
-
-• ${this.wrapWithColor('Part of Core team', '#ffa07a')} - ${this.wrapWithColor(
-      'Team that leads company tech decisions',
+${this.wrapWithColor('│', '#ffff00')} ${this.wrapWithColor(
+      'Bringing Finance + Data + AI together for smarter decisions 🚀',
       '#ffffff',
-    )}
-• ${this.wrapWithColor('Tech interviewer', '#ffa07a')} - ${this.wrapWithColor(
-      'Interview potential candidates.',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor('Microsoft project', '#ffa07a')} - ${this.wrapWithColor(
-      'IOT marketing project in every Microsoft store.',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor('Fullstack engineer', '#ffa07a')} - ${this.wrapWithColor(
-      'Wrote and reviewed code for big projects.',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor(
-      'AppriseMobile Tech Lead',
-      '#ffa07a',
-    )} - ${this.wrapWithColor(
-      'CRM for Toyota and corporates in USA',
-      '#ffffff',
-    )}
-
-${this.wrapWithColor('Technologies used:', '#00ffff')} ${this.wrapWithColor(
-      'JavaScript, Python, pandas, NodeJs, ReactJS, Chai, Sinon, Mocha, ES6, ElasticSearch, Redis, Nginx, Gulp, JIRA, Docker, Azure, AWS, MongoDB',
-      '#87cefa',
-    )}
-
-<span style="color: #00ffff;">GUTENBERG TECHNOLOGY | Software Engineering</span>
+    )} ${this.wrapWithColor('│', '#ffff00')}
 ${this.wrapWithColor(
-  'Feb 2017 – Aug 2018 | Paris, France | 50-100 employees',
-  '#ffffff',
-)}
-
-• ${this.wrapWithColor(
-      'Fullstack developer',
-      '#ffa07a',
-    )} - ${this.wrapWithColor(
-      'Frontend and backend (real-time publisher platform) used by National Geographics, IUBH, Fujitsu',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor('MEFIO developer', '#ffa07a')} - ${this.wrapWithColor(
-      'Highly available publisher platform',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor(
-      'Webreader developer',
-      '#ffa07a',
-    )} - ${this.wrapWithColor(
-      'reader platform, e-Learning platform',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor('SaaS developer', '#ffa07a')} - ${this.wrapWithColor(
-      'Integrated strategy to migrate from manual sales to SaaS',
-      '#ffffff',
-    )}
-
-${this.wrapWithColor('Technologies used:', '#00ffff')} ${this.wrapWithColor(
-      'Python, ES6, ElasticSearch, Redis, Nginx, npm, Gulp, JIRA, Docker, AWS S3, RethinkDB, ReactJS, NodeJS, AngularJS, JavaScript',
-      '#87cefa',
-    )}
-
-<span style="color: #00ffff;">GROUP OF COMPANIES | Software Engineer</span>
-${this.wrapWithColor(
-  'Mar 2015 – Feb 2017 | Tirana, Albania | 5-30 employees',
-  '#ffffff',
-)}
-
-• ${this.wrapWithColor('Software developer', '#ffa07a')} - ${this.wrapWithColor(
-      'Developed web and native projects',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor('Bar management app', '#ffa07a')} - ${this.wrapWithColor(
-      'Developed app for bar/restaurant management.',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor(
-      'Bank system optimisation',
-      '#ffa07a',
-    )} - ${this.wrapWithColor(
-      'Optimised aggregation from 11h to 1h',
-      '#ffffff',
-    )}
-• ${this.wrapWithColor('UKD developer', '#ffa07a')} - ${this.wrapWithColor(
-      'Water supply billing process for Albania, Government project',
-      '#ffffff',
-    )}
-
-${this.wrapWithColor('Technologies used:', '#00ffff')} ${this.wrapWithColor(
-      'Typescript, Python, Gulp, Docker, MongoDB, ReactJS, NodeJs, AngularJS, JavaScript, Java',
-      '#87cefa',
-    )}`;
+  '╰───────────────────────────────────────────────────────╯',
+  '#ffff00',
+)}`;
 
     const experienceDiv = document.createElement('div');
     experienceDiv.innerHTML = experience;
