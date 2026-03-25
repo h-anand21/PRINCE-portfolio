@@ -651,11 +651,11 @@ ${this.wrapWithColor(
   '#ff8c00',
 )}
 ${this.wrapWithColor('│', '#ff8c00')} ${this.wrapWithColor(
-      'Senior software engineer with more than 10 years of',
+      'Passionate Investment Banking enthusiast based in Delhi, India',
       '#ffffff',
     )}
 ${this.wrapWithColor('│', '#ff8c00')} ${this.wrapWithColor(
-      'programming experience.',
+      'with exposure to Accenture and JP Morgan.',
       '#ffffff',
     )}
 ${this.wrapWithColor(
@@ -665,34 +665,44 @@ ${this.wrapWithColor(
 
 ${this.wrapWithColor('⚡ Experience', '#ff8c00')}
 ${this.wrapWithColor(
-  '   Building scalable and efficient software solutions using',
+  '   Worked on financial analysis, valuation, and market research',
   '#ffffff',
 )}
-${this.wrapWithColor('   React, JavaScript, and Google Cloud', '#ff8c00')}
+${this.wrapWithColor('   delivering meaningful business insights', '#ffffff')}
 
-${this.wrapWithColor('⚡ Passion', '#ff8c00')}
+${this.wrapWithColor('⚡ Expertise', '#ff8c00')}
+${this.wrapWithColor('   Corporate Finance & Capital Markets', '#ffffff')}
 ${this.wrapWithColor(
-  '   Transforming innovative ideas into high-quality applications',
-  '#ffffff',
-)}
-${this.wrapWithColor(
-  '   with elegant and efficient implementations',
+  '   Financial Statement Analysis & Investment Opportunities',
   '#ffffff',
 )}
 
 ${this.wrapWithColor('⚡ Strengths', '#ff8c00')}
 ${this.wrapWithColor(
-  '   Strong team player with expertise in designing robust,',
+  '   Analytical precision with strong strategic thinking',
   '#ffffff',
 )}
-${this.wrapWithColor('   high-performance systems', '#ffffff')}
+${this.wrapWithColor(
+  '   Passion for high-stakes finance and decision-making',
+  '#ffffff',
+)}
+
+${this.wrapWithColor('⚡ Passion', '#ff8c00')}
+${this.wrapWithColor(
+  '   Driving impactful financial insights and strategic deals',
+  '#ffffff',
+)}
+${this.wrapWithColor(
+  '   in dynamic and evolving market environments',
+  '#ffffff',
+)}
 
 ${this.wrapWithColor(
   '╭───────────────────────────────────────────────────────╮',
   '#ff8c00',
 )}
 ${this.wrapWithColor('│', '#ff8c00')} ${this.wrapWithColor(
-      'Ready to bring your innovative ideas to life!',
+      'Ready to deliver impactful financial insights!',
       '#ffffff',
     )} ${this.wrapWithColor('│', '#ff8c00')}
 ${this.wrapWithColor(
@@ -925,41 +935,41 @@ ${this.wrapWithColor('Technologies used:', '#00ffff')} ${this.wrapWithColor(
     const education = `<span style="color: #ff8c00; font-weight: bold;">🎓 Education</span>
 
 ${this.wrapWithColor(
-  '┌──────────────────────────────────────────────────┐',
+  '┌────────────────────────────────────────────────────────────┐',
   '#ff8c00',
 )}
 ${this.wrapWithColor('│', '#ff8c00')}${this.wrapWithColor(
-      ' Bachelor of Computer Science ',
+      " Bachelor's Degree in Business Administration (BBA) ",
       '#ffffff',
     )}${this.wrapWithColor('│', '#ff8c00')}
 ${this.wrapWithColor(
-  '└──────────────────────────────────────────────────┘',
+  '└────────────────────────────────────────────────────────────┘',
   '#ff8c00',
 )}
 
 ${this.wrapWithColor('🏛️ Institution:', '#ff8c00')} ${this.wrapWithColor(
-      'University of Tirana',
+      'Galgotias University',
       '#ffffff',
     )}
 ${this.wrapWithColor('📅 Duration:', '#ff8c00')}    ${this.wrapWithColor(
-      '2013 - 2016',
+      '2025 - 2028',
       '#ffffff',
     )}
 ${this.wrapWithColor('📍 Location:', '#ff8c00')}    ${this.wrapWithColor(
-      'Tirana, Albania',
+      'Gautam Buddha Nagar, Greater Noida, India',
       '#ffffff',
     )}
 
 ${this.wrapWithColor(
-  '╭──────────────────────────────────────────────────╮',
+  '╭────────────────────────────────────────────────────────────╮',
   '#ff8c00',
 )}
 ${this.wrapWithColor('│', '#ff8c00')}${this.wrapWithColor(
-      ' Foundation of my software engineering journey ',
+      ' Foundation of my finance & business career journey      ',
       '#ffffff',
     )}${this.wrapWithColor('│', '#ff8c00')}
 ${this.wrapWithColor(
-  '╰──────────────────────────────────────────────────╯',
+  '╰────────────────────────────────────────────────────────────╯',
   '#ff8c00',
 )}`;
 
@@ -970,32 +980,50 @@ ${this.wrapWithColor(
   }
 
   showSkills(outputElement = this.output) {
-    const skills = `<span style="color: #ffff00; font-weight: bold;">🛠️ PROGRAMMING</span>
+    const skills = `<span style="color: #ffff00; font-weight: bold;">📊 DATA ANALYSIS</span>
 
-• ${this.wrapWithColor('Typescript', '#ffffff')}
-• ${this.wrapWithColor('Python', '#ffffff')}
-• ${this.wrapWithColor('Javascript', '#ffffff')}
-• ${this.wrapWithColor('Node', '#ffffff')}
-• ${this.wrapWithColor('React', '#ffffff')}
-• ${this.wrapWithColor('Angular', '#ffffff')}
-• ${this.wrapWithColor('Google Cloud', '#ffffff')}
-• ${this.wrapWithColor('AWS', '#ffffff')}
-• ${this.wrapWithColor('Azure', '#ffffff')}
-• ${this.wrapWithColor('Docker', '#ffffff')}
-• ${this.wrapWithColor('Terraform', '#ffffff')}
-• ${this.wrapWithColor('Kubernetes', '#ffffff')}
-• ${this.wrapWithColor('Java', '#ffffff')}
-• ${this.wrapWithColor('Kotlin', '#ffffff')}
-• ${this.wrapWithColor('MongoDB', '#ffffff')}
-• ${this.wrapWithColor('RethinkDB', '#ffffff')}
-• ${this.wrapWithColor('Jest', '#ffffff')}
-• ${this.wrapWithColor('ElasticSearch', '#ffffff')}
-• ${this.wrapWithColor('GraphQL', '#ffffff')}
-• ${this.wrapWithColor('Express', '#ffffff')}
-• ${this.wrapWithColor('Redis', '#ffffff')}
+• ${this.wrapWithColor('Microsoft Excel', '#ffffff')}
+• ${this.wrapWithColor('Microsoft Power BI', '#ffffff')}
+• ${this.wrapWithColor('Data Cleaning & Transformation', '#ffffff')}
+• ${this.wrapWithColor('Dashboard Creation', '#ffffff')}
+• ${this.wrapWithColor('Data Visualization', '#ffffff')}
+• ${this.wrapWithColor('Descriptive Analytics', '#ffffff')}
+
+<span style="color: #00ffff; font-weight: bold;">💻 LANGUAGES</span>
+
 • ${this.wrapWithColor('SQL', '#ffffff')}
-• ${this.wrapWithColor('HTML', '#ffffff')}
-• ${this.wrapWithColor('CSS', '#ffffff')}`;
+• ${this.wrapWithColor('Python', '#ffffff')}
+• ${this.wrapWithColor('DAX (Power BI)', '#ffffff')}
+• ${this.wrapWithColor('Excel Formulas & Functions', '#ffffff')}
+
+<span style="color: #98fb98; font-weight: bold;">🗄️ DATABASES</span>
+
+• ${this.wrapWithColor('MySQL', '#ffffff')}
+• ${this.wrapWithColor('Microsoft SQL Server', '#ffffff')}
+• ${this.wrapWithColor('Data Querying', '#ffffff')}
+• ${this.wrapWithColor('Data Modeling', '#ffffff')}
+
+<span style="color: #87cefa; font-weight: bold;">☁️ CLOUD & DATA PLATFORMS</span>
+
+• ${this.wrapWithColor('Google BigQuery', '#ffffff')}
+• ${this.wrapWithColor('Basic Cloud Concepts', '#ffffff')}
+• ${this.wrapWithColor('Data Import / ETL Basics', '#ffffff')}
+
+<span style="color: #ffa07a; font-weight: bold;">🛠️ TOOLS & MORE</span>
+
+• ${this.wrapWithColor('Git', '#ffffff')}
+• ${this.wrapWithColor('Visual Studio Code', '#ffffff')}
+• ${this.wrapWithColor('Jupyter Notebook', '#ffffff')}
+• ${this.wrapWithColor('Reporting & Presentation', '#ffffff')}
+• ${this.wrapWithColor('Business Insights', '#ffffff')}
+
+<span style="color: #ff8c00; font-weight: bold;">📈 BUSINESS & DOMAIN SKILLS</span>
+
+• ${this.wrapWithColor('Sales & Purchase Analysis', '#ffffff')}
+• ${this.wrapWithColor('Financial Basics', '#ffffff')}
+• ${this.wrapWithColor('CRM Understanding', '#ffffff')}
+• ${this.wrapWithColor('Industrial Products Knowledge (Motors etc.)', '#ffffff')}
+• ${this.wrapWithColor('Decision Support', '#ffffff')}`;
 
     const skillsDiv = document.createElement('div');
     skillsDiv.innerHTML = skills;
@@ -1017,7 +1045,7 @@ ${this.wrapWithColor('✉', '#ff8c00')}  ${this.wrapWithColor(
       'Email:',
       '#ff8c00',
     )} ${this.wrapWithColor(
-      '<a href="mailto:marjoballabani@gmail.com" style="color: #ffffff; text-decoration: none;">marjoballabani@gmail.com</a>',
+      '<a href="mailto:princeingermany@gmail.com" style="color: #ffffff; text-decoration: none;">princeingermany@gmail.com</a>',
       '#ffffff',
     )}
 
@@ -1025,15 +1053,15 @@ ${this.wrapWithColor('🌐', '#ff8c00')}  ${this.wrapWithColor(
       'Website:',
       '#ff8c00',
     )} ${this.wrapWithColor(
-      '<a href="https://marjoballabani.me" target="_blank" style="color: #ffffff; text-decoration: none;">marjoballabani.me</a>',
+      '<a href="https://princeib.netlify.app/" target="_blank" style="color: #ffffff; text-decoration: none;">princeib.netlify.app</a>',
       '#ffffff',
     )}
 
 ${this.wrapWithColor('⚡', '#ff8c00')}  ${this.wrapWithColor(
-      'Github:',
+      'Twitter:',
       '#ff8c00',
     )} ${this.wrapWithColor(
-      '<a href="https://github.com/marjoballabani" target="_blank" style="color: #ffffff; text-decoration: none;">github.com/marjoballabani</a>',
+      '<a href="https://x.com/iprinshuuu" target="_blank" style="color: #ffffff; text-decoration: none;">x.com/iprinshuuu</a>',
       '#ffffff',
     )}
 
@@ -1041,7 +1069,7 @@ ${this.wrapWithColor('💼', '#ff8c00')}  ${this.wrapWithColor(
       'LinkedIn:',
       '#ff8c00',
     )} ${this.wrapWithColor(
-      '<a href="https://linkedin.com/in/marjo-ballabani" target="_blank" style="color: #ffffff; text-decoration: none;">linkedin.com/in/marjo-ballabani</a>',
+      '<a href="https://www.linkedin.com/in/wokenupofficial/" target="_blank" style="color: #ffffff; text-decoration: none;">linkedin.com/in/wokenupofficial/</a>',
       '#ffffff',
     )}
 
@@ -1107,21 +1135,49 @@ ${this.wrapWithColor('╰──────────────────�
 
   loadSkills() {
     this.skills = {
-      programming: {
-        JavaScript: 95,
+      dataAnalysis: {
+        'Microsoft Excel': 90,
+        'Microsoft Power BI': 88,
+        'Data Cleaning & Transformation': 85,
+        'Dashboard Creation': 87,
+        'Data Visualization': 89,
+        'Descriptive Analytics': 86,
+      },
+
+      languages: {
+        SQL: 92,
         Python: 90,
-        'React.js': 85,
-        'Node.js': 88,
+        'DAX (Power BI)': 85,
+        'Excel Formulas & Functions': 88,
       },
-      cloud: {
-        'Google Cloud': 92,
-        AWS: 85,
-        Azure: 80,
-      },
+
       databases: {
-        MongoDB: 90,
-        PostgreSQL: 85,
-        Redis: 82,
+        MySQL: 90,
+        'Microsoft SQL Server': 88,
+        'Data Querying': 87,
+        'Data Modeling': 85,
+      },
+
+      cloud: {
+        'Google BigQuery': 89,
+        'Basic Cloud Concepts': 85,
+        'Data Import / ETL Basics': 86,
+      },
+
+      tools: {
+        Git: 90,
+        'Visual Studio Code': 95,
+        'Jupyter Notebook': 92,
+        'Reporting & Presentation': 88,
+        'Business Insights': 87,
+      },
+
+      business: {
+        'Sales & Purchase Analysis': 85,
+        'Financial Basics': 80,
+        'CRM Understanding': 82,
+        'Industrial Products Knowledge': 78,
+        'Decision Support': 86,
       },
     };
   }

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -196,7 +196,7 @@
     <section class="hero" id="hero">
         <div class="hero-content">
             <div class="hero-left">
-                <p class="hero-greeting" id="hero-greeting">Hi there!</p>
+                <p class="hero-greeting" id="hero-greeting">Hi there! &#x1F44B;</p>
                 <h1 class="hero-name">I'm Prince Kumar.</h1>
                 <p class="hero-description">
                     Delhi-based Investment Banking professional focused on finance, valuation, and strategic transactions.
@@ -247,7 +247,7 @@
             <div class="hero-right">
                 <div class="hero-image-wrapper">
                     <div class="tape-sticker"></div>
-                    <img src="image/avatar-gpt.png" alt="Marjo Ballabani" class="hero-photo" width="400" height="400" fetchpriority="high">
+                    <img src="image/prince.png" alt="Marjo Ballabani" class="hero-photo" width="400" height="400" fetchpriority="high">
                     <div class="deco-code">
                         <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="6" y="6" width="88" height="88" rx="8" fill="#66d9ef" stroke="#000" stroke-width="4"/>
@@ -1387,7 +1387,7 @@
 
         // Matrix Typing Effect for Hero Greeting
         const greetingElement = document.getElementById('hero-greeting');
-        const finalText = 'Hi there! ðŸ‘‹';
+        const finalText = 'Hi there! 👋';
         const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
 
         function matrixTypingEffect() {
@@ -1399,7 +1399,7 @@
                         if (index < iterations) {
                             return finalText[index];
                         }
-                        if (char === ' ' || char === 'ðŸ‘‹') {
+                        if (char === ' ' || char.codePointAt(0) > 127) {
                             return char;
                         }
                         return chars[Math.floor(Math.random() * chars.length)];
