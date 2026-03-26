@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -181,10 +181,11 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Journey</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href="https://marjoballabani.github.io/lazyfire/" target="_blank" class="nav-lazyfire" title="LazyFire - My Project">
+                <a href="https://hashnode.com/@princeoberoi" target="_blank" class="nav-lazyfire" title="LazyFire - My Project">
                     <img src="image/lazyfire-logo.svg" alt="LazyFire" class="lazyfire-logo" width="28" height="28">
-                    <span class="nav-lazyfire-text">Creator of LazyFire</span>
+                    <span class="nav-lazyfire-text">My Blog</span>
                 </a>
+                <a href="prince_kumar_cv_clean-1.pdf" target="_blank" class="nav-cta" style="background: var(--pink);">Download CV</a>
                 <a href="#contact" class="nav-cta">Get in Touch!</a>
                 <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle theme">
                     <i class="fas fa-moon"></i>
@@ -824,17 +825,299 @@
         </section>
 
 
-        <section class="section section-compact" id="projects">
-            <div class="creator-showcase">
-                <p class="creator-label">Creator of</p>
-                <a href="https://marjoballabani.github.io/lazyfire/" target="_blank" class="creator-project">
-                    <img src="image/lazyfire-logo.svg" alt="LazyFire" class="creator-logo" width="80" height="80">
-                    <span class="creator-name">LazyFire</span>
-                </a>
-                <p class="creator-tagline">A CLI tool for lazy developers. Built with Go.</p>
-                <a href="https://github.com/marjoballabani/lazyfire" target="_blank" class="creator-github"><i class="fab fa-github"></i> Check it out</a>
+        <section class="section" id="blog">
+            <h2 class="section-title">LATEST INSIGHTS</h2>
+            
+            <div id="blog-container">
+                <!-- Loader -->
+                <div id="blog-loader" style="display: flex; flex-direction: column; align-items: center; gap: 1rem; margin: 3rem 0;">
+                    <div style="font-size: 3rem; animation: float-deco 2s infinite;">✍️</div>
+                    <p style="font-family: 'Space Mono', monospace; font-weight: bold;">Fetching latest articles...</p>
+                </div>
+                
+                <!-- Blog content will be injected here -->
+                <div id="blog-content"></div>
+            </div>
+
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="https://medium.com/@pkumarktq2" target="_blank" class="btn-cta" style="background: var(--pink); font-size: 1.2rem; padding: 0.8rem 2rem;">Check Out My Blog</a>
             </div>
         </section>
+
+        <style>
+        /* Blog Section Neo-Brutalist Styles */
+        #blog { scroll-margin-top: 100px; }
+        .blog-featured {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+            background: var(--white);
+            border: 4px solid var(--border);
+            box-shadow: 12px 12px 0 var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 3rem;
+            transition: all 0.3s ease;
+        }
+        .blog-featured:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 8px 8px 0 var(--border);
+        }
+        .blog-featured-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-right: 4px solid var(--border);
+        }
+        .blog-featured-content {
+            padding: 3rem 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: var(--yellow);
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2.5rem;
+        }
+        .blog-card {
+            background: var(--white);
+            border: 4px solid var(--border);
+            box-shadow: 8px 8px 0 var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+        .blog-card:hover {
+            transform: translate(4px, 4px);
+            box-shadow: 4px 4px 0 var(--border);
+        }
+        .blog-card-img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 4px solid var(--border);
+        }
+        .blog-card-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+        .blog-date {
+            font-size: 0.85rem;
+            font-weight: 700;
+            font-family: 'Space Mono', monospace;
+            color: var(--white);
+            background: var(--border);
+            padding: 0.3rem 0.8rem;
+            display: inline-block;
+            border-radius: 4px;
+            margin-bottom: 1.2rem;
+            align-self: flex-start;
+        }
+        .blog-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+            line-height: 1.3;
+        }
+        .blog-featured .blog-title {
+            font-size: 2.2rem;
+        }
+        .blog-excerpt {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+            flex-grow: 1;
+            color: #444;
+        }
+        .blog-featured .blog-excerpt {
+            font-size: 1.1rem;
+            color: #222;
+        }
+        .blog-link {
+            display: inline-block;
+            padding: 0.6rem 1.2rem;
+            background: var(--cyan);
+            border: 3px solid var(--border);
+            box-shadow: 4px 4px 0 var(--border);
+            color: var(--border);
+            text-decoration: none;
+            font-weight: 700;
+            align-self: flex-start;
+            transition: all 0.2s ease;
+        }
+        .blog-link:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--border);
+        }
+        body[data-theme="dark"] .blog-featured, body[data-theme="dark"] .blog-card {
+            background: var(--bg);
+        }
+        body[data-theme="dark"] .blog-featured-content {
+            background: var(--secondary);
+        }
+        body[data-theme="dark"] .blog-excerpt {
+            color: #ddd;
+        }
+        body[data-theme="dark"] .blog-featured .blog-excerpt {
+            color: #222;
+        }
+        @media (max-width: 768px) {
+            .blog-featured {
+                grid-template-columns: 1fr;
+            }
+            .blog-featured-img {
+                height: 250px;
+                border-right: none;
+                border-bottom: 4px solid var(--border);
+            }
+        }
+        </style>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', async () => {
+            const blogContent = document.getElementById('blog-content');
+            const blogLoader = document.getElementById('blog-loader');
+            
+            // Fallback static data in case API fails or user has no posts yet
+            const fallbackBlogs = [
+                {
+                    title: "Navigating the M&A Landscape in 2026",
+                    brief: "A deep dive into the recent trends shaping Mergers & Acquisitions, highlighting strategic consolidations and emerging market opportunities.",
+                    url: "https://medium.com/@pkumarktq2",
+                    coverImage: { url: "https://images.unsplash.com/photo-1591696205602-2f950c417cb9?auto=format&fit=crop&q=80&w=800" },
+                    publishedAt: "2026-03-24T10:00:00.000Z"
+                },
+                {
+                    title: "The Role of AI in Financial Modeling",
+                    brief: "How generative AI and machine learning are transforming the way we build financial models, analyze risk, and forecast revenues.",
+                    url: "https://medium.com/@pkumarktq2",
+                    coverImage: { url: "https://images.unsplash.com/photo-1620712948343-0008ece8b211?auto=format&fit=crop&q=80&w=800" },
+                    publishedAt: "2026-02-15T08:30:00.000Z"
+                },
+                {
+                    title: "Demystifying Corporate Valuation",
+                    brief: "An introductory guide to DCF (Discounted Cash Flow) models and relative valuation methods for aspiring finance professionals.",
+                    url: "https://medium.com/@pkumarktq2",
+                    coverImage: { url: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&q=80&w=800" },
+                    publishedAt: "2026-01-10T09:15:00.000Z"
+                },
+                {
+                    title: "Data Storytelling with Power BI",
+                    brief: "Turning complex financial datasets into intuitive and interactive dashboards that guide executive decision-making.",
+                    url: "https://medium.com/@pkumarktq2",
+                    coverImage: { url: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" },
+                    publishedAt: "2025-11-20T14:00:00.000Z"
+                }
+            ];
+
+            const renderBlogs = (blogs) => {
+                if(blogs.length === 0) return;
+                
+                // Featured Post (First one)
+                const featured = blogs[0];
+                const remaining = blogs.slice(1);
+                
+                const formatDate = (dateString) => {
+                    const options = { year: 'numeric', month: 'short', day: 'numeric' };
+                    return new Date(dateString).toLocaleDateString('en-US', options);
+                };
+
+                let html = `
+                    <div class="blog-featured">
+                        <img src="${featured.coverImage?.url || 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800'}" alt="${featured.title}" class="blog-featured-img">
+                        <div class="blog-featured-content">
+                            <span class="blog-date">${formatDate(featured.publishedAt)} • FEATURED</span>
+                            <h3 class="blog-title">${featured.title}</h3>
+                            <p class="blog-excerpt">${featured.brief}</p>
+                            <a href="${featured.url}" target="_blank" class="blog-link">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                `;
+
+                // Grid for remaining posts
+                if(remaining.length > 0) {
+                    html += `<div class="blog-grid">`;
+                    remaining.forEach((post, i) => {
+                        const colors = ['var(--cyan)', 'var(--accent)', 'var(--pink)'];
+                        const btnColor = colors[i % colors.length];
+                        
+                        html += `
+                            <div class="blog-card">
+                                <img src="${post.coverImage?.url || 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80&w=800'}" alt="${post.title}" class="blog-card-img">
+                                <div class="blog-card-content">
+                                    <span class="blog-date">${formatDate(post.publishedAt)}</span>
+                                    <h3 class="blog-title">${post.title}</h3>
+                                    <p class="blog-excerpt">${post.brief.length > 120 ? post.brief.substring(0, 120) + '...' : post.brief}</p>
+                                    <a href="${post.url}" target="_blank" class="blog-link" style="background: ${btnColor};">Read More</a>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    html += `</div>`;
+                }
+                
+                blogContent.innerHTML = html;
+                blogLoader.style.display = 'none';
+            };
+
+            // Attempt to fetch from Medium RSS via rss2json API
+            try {
+                const rssUrl = 'https://medium.com/feed/@pkumarktq2';
+                const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${encodeURIComponent(rssUrl)}`;
+
+                fetch(apiUrl)
+                .then(res => res.json())
+                .then(data => {
+                    if (data.status === 'ok' && data.items && data.items.length > 0) {
+                        const apiPosts = data.items.slice(0, 5).map(item => {
+                            // Extract brief text from HTML description
+                            const tempDiv = document.createElement('div');
+                            tempDiv.innerHTML = item.description;
+                            let briefText = tempDiv.textContent || tempDiv.innerText || "";
+                            if (briefText.length > 180) briefText = briefText.substring(0, 180) + '...';
+                            
+                            // Determine a suitable image (thumbnail or fallback)
+                            // Often Medium embeds an image inside the description that parsing can extract, but thumbnail works usually if set.
+                            let imageUrl = item.thumbnail;
+                            if (imageUrl && imageUrl.includes('stat?event=')) imageUrl = null; // Filter out tracking pixels
+                            
+                            // If no valid thumbnail, attempt to grab first image tag directly from HTML
+                            if (!imageUrl) {
+                                const firstImage = tempDiv.querySelector('img');
+                                if (firstImage) imageUrl = firstImage.src;
+                            }
+
+                            return {
+                                title: item.title,
+                                brief: briefText,
+                                url: item.link,
+                                coverImage: { url: imageUrl || undefined },
+                                publishedAt: item.pubDate
+                            };
+                        });
+                        renderBlogs(apiPosts);
+                    } else {
+                        console.log("No valid posts found from Medium feed, using fallback data.");
+                        renderBlogs(fallbackBlogs);
+                    }
+                })
+                .catch(err => {
+                    console.error('Error fetching blogs from Medium:', err);
+                    renderBlogs(fallbackBlogs);
+                });
+            } catch (error) {
+                console.error('Network logic error:', error);
+                renderBlogs(fallbackBlogs);
+            }
+        });
+        </script>
 
         <section class="section education-languages-section">
             <div class="education-languages-grid">
