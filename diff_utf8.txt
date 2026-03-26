@@ -1,0 +1,17 @@
+﻿diff --git a/index.html b/index.html
+index 3979289..4910504 100644
+--- a/index.html
++++ b/index.html
+@@ -1695,9 +1695,9 @@
+             zoomControl: true
+         });
+ 
+-        L.tileLayer('https://watercolormaps.collection.cooperhewitt.org/tile/watercolor/{z}/{x}/{y}.jpg', {
+-            attribution: '├é┬⌐ Stamen Design, ├é┬⌐ OpenStreetMap contributors',
+-            maxZoom: 16
++        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
++            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
++            maxZoom: 19
+         }).addTo(map);
+ 
+         // Add custom home button control
